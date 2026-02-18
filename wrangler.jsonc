@@ -1,11 +1,10 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ip-geoaddress-generator",  // 必须和你的 Cloudflare 项目名（dashboard 里）完全一样！大小写敏感
-  "compatibility_date": "2026-02-18",   // 用今天或近期日期
-  "compatibility_flags": [
-    "nodejs_compat"                     // Next.js 构建可能需要
-  ],
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ip-geoaddress-generator",  // 确认 dashboard 项目名匹配
+  "compatibility_date": "2026-02-18",
+  "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "./out"                // ← 关键！改成你的实际输出目录
+    "directory": "./out",  // 或 "./dist" 如果你自定义了
+    "not_found_handling": "single-page-application"  // SPA 模式，404 fallback index.html
   }
 }
