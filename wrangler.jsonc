@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "ip-geoaddress-generator",  // 确认 dashboard 项目名匹配
+  "name": "ip-geoaddress-generator218",  // 确认 dashboard 项目名匹配
   "compatibility_date": "2026-02-18",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
